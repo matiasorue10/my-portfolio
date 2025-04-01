@@ -24,20 +24,20 @@
 
 ## ✅ Checklist
 
-- [] My code follows the project's coding guidelines.
-- [] I have self-reviewed my code.
-- [] I have added tests that validate these changes.
-- [] Documentation has been updated if needed.
+- [ ] My code follows the project's coding guidelines.
+- [ ] I have self-reviewed my code.
+- [ ] I have added tests that validate these changes.
+- [ ] Documentation has been updated if needed.
 
 ## 🛠 Type of Change
 
 What type of change does this PR introduce?
 
-- [] 🚀 New feature
-- [] 🐛 Bug fix
-- [] 📝 Documentation update
-- [] 🔧 Refactoring
-- [] ⚡ Performance improvement
+- [ ] 🚀 New feature
+- [ ] 🐛 Bug fix
+- [ ] 📝 Documentation update
+- [ ] 🔧 Refactoring
+- [ ] ⚡ Performance improvement
 
 ## 🔗 Related Issue (if applicable)
 

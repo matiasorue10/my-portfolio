@@ -6,13 +6,17 @@ import tseslint from 'typescript-eslint';
 import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import react from 'eslint-plugin-react';
 import importPlugin from 'eslint-plugin-import';
+import reactX from 'eslint-plugin-react-x';
+import reactDom from 'eslint-plugin-react-dom';
 
 export default tseslint.config(
   { ignores: ['dist', 'node_modules'] },
   {
     extends: [
       js.configs.recommended,
-      ...tseslint.configs.recommended,
+      ...tseslint.configs.recommendedTypeChecked,
+      ...tseslint.configs.strictTypeChecked,
+      ...tseslint.configs.stylisticTypeChecked,
       react.configs.recommended,
       eslintConfigPrettier,
     ],
@@ -20,10 +24,16 @@ export default tseslint.config(
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
+      'react-x': reactX,
+      'react-dom': reactDom,
       import: importPlugin,
     },
     settings: {

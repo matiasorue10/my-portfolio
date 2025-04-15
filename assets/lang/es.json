@@ -1,3 +1,10 @@
 {
-  "welcome": "Benvenido a React y react-i18next."
+  "header": {
+    "home": "Inicio",
+    "workExperience": "Experiencia laboral",
+    "about": "Acerca de mi",
+    "contact": "Contáctame",
+    "language": "Idioma"
+  },
+  "welcome": "Bienvenido a React y react-i18next."
 }

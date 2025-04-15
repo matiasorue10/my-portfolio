@@ -1,3 +1,10 @@
 {
+  "header": {
+    "home": "Home",
+    "workExperience": "Work experience",
+    "about": "About me",
+    "contact": "Contact me",
+    "language": "Language"
+  },
   "welcome": "Welcome to React and react-i18next"
 }
